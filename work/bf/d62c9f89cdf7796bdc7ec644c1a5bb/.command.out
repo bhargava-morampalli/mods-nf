@@ -1,8 +1,0 @@
-single_fast5s ./
-make index
-138 files to process
-start sorting
-end sorting
-writing file
-end writing file
-make parquet

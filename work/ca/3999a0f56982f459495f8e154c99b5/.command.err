@@ -1,69 +1,0 @@
-[15:07:06] Loading minimap2 reference.
-[15:07:06] Getting file list.
-[15:07:06] Re-squiggling reads (raw signal to genomic sequence alignment).
-
-
-
-
-
-
-  0%|          | 0/138 [00:00<?, ?it/s]                                       [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-     -----
-     -----
-     -----
-     -----
-     -----
-  0%|          | 0/138 [00:00<?, ?it/s]                                       [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-     -----
-     -----
-     -----
-     -----
-     -----
-  0%|          | 0/138 [00:00<?, ?it/s]  1%|          | 1/138 [00:00<01:08,  1.99it/s]                                               [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-   100.0% (      1 reads) : Alignment not produced                                                          
-     -----
-     -----
-     -----
-     -----
-  1%|          | 1/138 [00:00<01:08,  1.99it/s]  9%|▉         | 13/138 [00:01<00:09, 12.96it/s]                                                [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-    15.4% (      2 reads) : Alignment not produced                                                          
-     7.7% (      1 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     -----
-     -----
-     -----
-  9%|▉         | 13/138 [00:01<00:09, 12.95it/s] 30%|██▉       | 41/138 [00:01<00:03, 27.24it/s]                                                [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-     9.8% (      4 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     7.3% (      3 reads) : Alignment not produced                                                          
-     -----
-     -----
-     -----
- 30%|██▉       | 41/138 [00:01<00:03, 27.22it/s]                                                [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-     8.9% (      5 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     7.1% (      4 reads) : Alignment not produced                                                          
-     -----
-     -----
-     -----
- 41%|████      | 56/138 [00:02<00:02, 27.89it/s] 59%|█████▊    | 81/138 [00:02<00:01, 32.28it/s]                                                [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-    11.1% (      9 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     4.9% (      4 reads) : Alignment not produced                                                          
-     -----
-     -----
-     -----
- 59%|█████▊    | 81/138 [00:02<00:01, 32.27it/s]                                                [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-    13.0% (     13 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     4.0% (      4 reads) : Alignment not produced                                                          
-     2.0% (      2 reads) : Read event to sequence alignment extends beyond bandwidth                       
-     -----
-     -----
- 72%|███████▏  | 100/138 [00:03<00:01, 33.20it/s]100%|██████████| 138/138 [00:03<00:00, 39.25it/s]                                                 [A[A[A[A[A[A5 most common unsuccessful read types (approx. %):
-    12.3% (     17 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     2.9% (      4 reads) : Alignment not produced                                                          
-     1.4% (      2 reads) : Read event to sequence alignment extends beyond bandwidth                       
-     -----
-     -----
-100%|██████████| 138/138 [00:03<00:00, 39.24it/s]100%|██████████| 138/138 [00:04<00:00, 34.35it/s]
-[15:07:10] Final unsuccessful reads summary (16.7% reads unsuccessfully processed; 23 total reads):
-    12.3% (     17 reads) : Poor raw to expected signal matching (revert with `tombo filter clear_filters`) 
-     2.9% (      4 reads) : Alignment not produced                                                          
-     1.4% (      2 reads) : Read event to sequence alignment extends beyond bandwidth                       
-[15:07:10] Saving Tombo reads index to file.

@@ -1,2 +1,0 @@
-: Guppy Basecalling Software, (C) Oxford Nanopore Technologies, Limited. Version 4.2.2+effbaf8
-

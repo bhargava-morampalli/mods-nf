@@ -60,4 +60,3 @@
 2021-03-18 08:32:38	6.9s	peaceful_bernard	ERR	2adaa1a1e10a445fc1cc1486748eba1b	49c8b4cf-0e71-42e9-8028-06997d059f22	nextflow run main.nf
 2021-03-22 14:34:44	-	stupefied_stonebraker	-	ec13d523e5c7533b2a84cc5c99a2a2c0	d0bcd5a4-ffc3-4237-9572-c2da9230fe2c	nextflow run main.nf
 2021-03-22 14:38:57	-	thirsty_monod	-	49c5381f064e0e0d9afe8a789ec038c9	7c44c4d5-23e6-4dbc-98d1-b8c314a78b39	nextflow run main.nf
-2021-03-22 15:06:02	2m 2s	small_volta	OK	dcd3b2eb75937ccd9c282e1fcf3192e7	992ca9ab-95ad-4641-a455-6e38fabbdb10	nextflow run main.nf
