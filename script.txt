@@ -1,0 +1,28 @@
+process {
+    withName:fastqtofasta {
+        container = 'file:///data/bhargava/containers/seqkit.0.15.0.sif'
+    }
+    withName:fastatotxt {
+        container = 'file:///data/bhargava/containers/seqkit.0.15.0.sif'
+    }
+    withName:fast5subset {
+        container = 'file:///data/bhargava/containers/ont-fast5-api.3.2.sif'
+    }
+    withName:basecalling {
+        container = 'file:///data/bhargava/containers/guppy.4.4.2.sif'
+    }
+    withName:multitosingle {
+        container = 'file:///data/bhargava/containers/ont-fast5-api.3.2.sif'
+    }
+    withName:tomboresquiggle {
+        container = 'file:///data/bhargava/containers/tombo.1.5.1.sif'
+    }
+}
+
+
+tower {
+  accessToken = 'eyJ0aWQiOiAzMjIxfS42NjJhZWVjOTNhZGU0NmQxMjY1OTFkZTA0NDI1ZGE0YWViZTNkMDk3'
+  enabled = true
+}
+
+nextflow run main.nf -with-report report -with-timeline timeline -with-dag flowchart.png

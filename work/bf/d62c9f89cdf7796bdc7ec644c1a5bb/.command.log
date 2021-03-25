@@ -1,0 +1,10 @@
+2021-03-22 15:07:17.383920: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+single_fast5s ./
+make index
+138 files to process
+  0%|                                                                                             | 0/138 [00:00<?, ?it/s]100%|█████████████████████████████████████████████████████████████████████████████████| 138/138 [00:00<00:00, 3897.53it/s]start sorting
+end sorting
+writing file
+end writing file
+make parquet
+

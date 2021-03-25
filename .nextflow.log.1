@@ -1,0 +1,70 @@
+Mar-22 14:38:56.351 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-22 14:38:56.461 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Mar-22 14:38:56.472 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [thirsty_monod] - revision: 49c5381f06
+Mar-22 14:38:56.492 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /scratch/bhargava/workflows/mods-nf/nextflow.config
+Mar-22 14:38:56.493 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /scratch/bhargava/workflows/mods-nf/nextflow.config
+Mar-22 14:38:56.513 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-22 14:38:57.049 [main] DEBUG nextflow.Session - Session uuid: 7c44c4d5-23e6-4dbc-98d1-b8c314a78b39
+Mar-22 14:38:57.049 [main] DEBUG nextflow.Session - Run name: thirsty_monod
+Mar-22 14:38:57.051 [main] DEBUG nextflow.Session - Executor pool size: 56
+Mar-22 14:38:57.086 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (02-11-2020 04:14 NZDT)
+  System: Linux 4.15.0-123-generic
+  Runtime: Groovy 3.0.5 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 44921@gru [127.0.1.1]
+  CPUs: 56 - Mem: 188.8 GB (1.1 GB) - Swap: 61 GB (57.7 GB)
+Mar-22 14:38:57.115 [main] DEBUG nextflow.Session - Work-dir: /scratch/bhargava/workflows/mods-nf/work [ext2/ext3]
+Mar-22 14:38:57.115 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /scratch/bhargava/workflows/mods-nf/bin
+Mar-22 14:38:57.169 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-22 14:38:57.191 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-22 14:38:57.457 [main] DEBUG nextflow.Session - Session start invoked
+Mar-22 14:38:57.477 [main] DEBUG io.seqera.tower.plugin.TowerClient - Creating Tower observer -- endpoint=https://api.tower.nf; requestInterval=1s; aliveInterval=1m; maxRetries=5; backOffBase=3; backOffDelay=250
+Mar-22 14:38:59.672 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-22 14:38:59.739 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: fast5subset, fastatotxt, tomboresquiggle, fastqtofasta, nanodocpreprocess, basecalling, multitosingle
+Mar-22 14:38:59.798 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-22 14:38:59.798 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 14:38:59.802 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-22 14:38:59.807 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=56; memory=188.8 GB; capacity=56; pollInterval=100ms; dumpInterval=5m
+Mar-22 14:38:59.905 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-22 14:38:59.905 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-22 14:38:59.912 [main] DEBUG nextflow.Session - Session aborted -- Cause: Process `fast5subset` declares 3 input channels but 4 were specified
+Mar-22 14:38:59.942 [main] ERROR nextflow.cli.Launcher - Process `fast5subset` declares 3 input channels but 4 were specified
+nextflow.exception.ScriptRuntimeException: Process `fast5subset` declares 3 input channels but 4 were specified
+	at nextflow.script.ProcessDef.run(ProcessDef.groovy:171)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:41)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:95)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:397)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:339)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at Script_9fa855c5$_runScript_closure13$_closure24.doCall(Script_9fa855c5:192)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1026)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:186)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:170)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ChainableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.runDsl2(BaseScript.groovy:191)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:200)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:219)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:219)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:127)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:277)
+	at nextflow.cli.Launcher.run(Launcher.groovy:466)
+	at nextflow.cli.Launcher.main(Launcher.groovy:648)

@@ -1,0 +1,103 @@
+Mar-18 06:56:37.665 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-18 06:56:37.775 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Mar-18 06:56:37.786 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [jolly_franklin] - revision: 7077abf065
+Mar-18 06:56:37.808 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /scratch/bhargava/workflows/mods-nf/nextflow.config
+Mar-18 06:56:37.809 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /scratch/bhargava/workflows/mods-nf/nextflow.config
+Mar-18 06:56:37.830 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-18 06:56:38.339 [main] DEBUG nextflow.Session - Session uuid: c7eb44c6-2c36-4fb6-96bf-afc95e0bdde6
+Mar-18 06:56:38.339 [main] DEBUG nextflow.Session - Run name: jolly_franklin
+Mar-18 06:56:38.340 [main] DEBUG nextflow.Session - Executor pool size: 56
+Mar-18 06:56:38.366 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (02-11-2020 04:14 NZDT)
+  System: Linux 4.15.0-123-generic
+  Runtime: Groovy 3.0.5 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 13303@gru [127.0.1.1]
+  CPUs: 56 - Mem: 188.8 GB (6.2 GB) - Swap: 61 GB (57.7 GB)
+Mar-18 06:56:38.388 [main] DEBUG nextflow.Session - Work-dir: /scratch/bhargava/workflows/mods-nf/work [ext2/ext3]
+Mar-18 06:56:38.389 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /scratch/bhargava/workflows/mods-nf/bin
+Mar-18 06:56:38.444 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-18 06:56:38.446 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-18 06:56:38.741 [main] DEBUG nextflow.Session - Session start invoked
+Mar-18 06:56:39.254 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-18 06:56:39.316 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: fast5subset, fastatotxt, tomboresquiggle, fastqtofasta, basecalling, multitosingle
+Mar-18 06:56:39.381 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 06:56:39.381 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 06:56:39.385 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-18 06:56:39.391 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=56; memory=188.8 GB; capacity=56; pollInterval=100ms; dumpInterval=5m
+Mar-18 06:56:39.484 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 06:56:39.484 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 06:56:39.489 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 06:56:39.489 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 06:56:39.496 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 06:56:39.496 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 06:56:39.503 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 06:56:39.503 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 06:56:39.509 [main] DEBUG nextflow.Session - Session aborted -- Cause: Unknown variable 'optional'
+Mar-18 06:56:39.538 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: Unknown variable 'optional'
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:295)
+	at nextflow.script.ProcessConfig.getProperty(ProcessConfig.groovy:272)
+	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:194)
+	at groovy.lang.Closure.getPropertyTryThese(Closure.java:320)
+	at groovy.lang.Closure.getPropertyDelegateFirst(Closure.java:310)
+	at groovy.lang.Closure.getProperty(Closure.java:296)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+	at Script_488a350c$_runScript_closure11.doCall(Script_488a350c:145)
+	at Script_488a350c$_runScript_closure11.doCall(Script_488a350c)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1026)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.ProcessDef.initialize(ProcessDef.groovy:111)
+	at nextflow.script.ProcessDef.run(ProcessDef.groovy:165)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:41)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:95)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:397)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:339)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at Script_488a350c$_runScript_closure12$_closure21.doCall(Script_488a350c:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:263)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1026)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:186)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:170)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:52)
+	at nextflow.script.ChainableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.runDsl2(BaseScript.groovy:191)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:200)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:219)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:219)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:127)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:277)
+	at nextflow.cli.Launcher.run(Launcher.groovy:466)
+	at nextflow.cli.Launcher.main(Launcher.groovy:648)

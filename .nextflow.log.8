@@ -1,0 +1,75 @@
+Mar-18 07:03:05.940 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+Mar-18 07:03:06.049 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Mar-18 07:03:06.060 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [ridiculous_snyder] - revision: f5054940e7
+Mar-18 07:03:06.080 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /scratch/bhargava/workflows/mods-nf/nextflow.config
+Mar-18 07:03:06.081 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /scratch/bhargava/workflows/mods-nf/nextflow.config
+Mar-18 07:03:06.100 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-18 07:03:06.621 [main] DEBUG nextflow.Session - Session uuid: c7eb44c6-2c36-4fb6-96bf-afc95e0bdde6
+Mar-18 07:03:06.621 [main] DEBUG nextflow.Session - Run name: ridiculous_snyder
+Mar-18 07:03:06.622 [main] DEBUG nextflow.Session - Executor pool size: 56
+Mar-18 07:03:06.648 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (02-11-2020 04:14 NZDT)
+  System: Linux 4.15.0-123-generic
+  Runtime: Groovy 3.0.5 on OpenJDK 64-Bit Server VM 11.0.8-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 14199@gru [127.0.1.1]
+  CPUs: 56 - Mem: 188.8 GB (6.2 GB) - Swap: 61 GB (57.7 GB)
+Mar-18 07:03:06.681 [main] DEBUG nextflow.Session - Work-dir: /scratch/bhargava/workflows/mods-nf/work [ext2/ext3]
+Mar-18 07:03:06.682 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /scratch/bhargava/workflows/mods-nf/bin
+Mar-18 07:03:06.732 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-18 07:03:06.734 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-18 07:03:06.976 [main] DEBUG nextflow.Session - Session start invoked
+Mar-18 07:03:07.487 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-18 07:03:07.550 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: fast5subset, fastatotxt, tomboresquiggle, fastqtofasta, basecalling, multitosingle
+Mar-18 07:03:07.614 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 07:03:07.614 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 07:03:07.618 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-18 07:03:07.623 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=56; memory=188.8 GB; capacity=56; pollInterval=100ms; dumpInterval=5m
+Mar-18 07:03:07.721 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 07:03:07.721 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 07:03:07.727 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 07:03:07.727 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 07:03:07.734 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 07:03:07.734 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 07:03:07.741 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 07:03:07.742 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 07:03:07.749 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-18 07:03:07.749 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-18 07:03:07.754 [main] DEBUG nextflow.Session - Ignite dataflow network (12)
+Mar-18 07:03:07.762 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastqtofasta
+Mar-18 07:03:07.763 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fastatotxt
+Mar-18 07:03:07.763 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > fast5subset
+Mar-18 07:03:07.764 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > basecalling
+Mar-18 07:03:07.764 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > multitosingle
+Mar-18 07:03:07.767 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > tomboresquiggle
+Mar-18 07:03:07.767 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-18 07:03:07.767 [main] DEBUG nextflow.Session - Session await
+Mar-18 07:03:07.771 [PathVisitor-6] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /scratch/bhargava/workflows/mods-nf/data/; pattern: *.fastq; options: [checkIfExists:true]
+Mar-18 07:03:07.884 [Actor Thread 6] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /scratch/bhargava/workflows/mods-nf/results/individualfast5s -- Cause: java.nio.file.NoSuchFileException: /scratch/bhargava/workflows/mods-nf/results/individualfast5s
+Mar-18 07:03:07.948 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-18 07:03:07.953 [Task submitter] INFO  nextflow.Session - [7d/ba3676] Submitted process > fastqtofasta (1)
+Mar-18 07:03:07.959 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-18 07:03:07.959 [Task submitter] INFO  nextflow.Session - [0d/a37425] Submitted process > basecalling (1)
+Mar-18 07:03:08.022 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: fastqtofasta (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bhargava/workflows/mods-nf/work/7d/ba3676ce41e2a659713fe5ed0cd257]
+Mar-18 07:03:08.042 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=168; maxQueueSize=504; keepAlive=1m
+Mar-18 07:03:08.046 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-18 07:03:08.047 [Task submitter] INFO  nextflow.Session - [86/a21c49] Submitted process > fastatotxt (1)
+Mar-18 07:03:08.108 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: fastatotxt (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bhargava/workflows/mods-nf/work/86/a21c495e8229b750b8d78cc88660a6]
+Mar-18 07:03:08.120 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-18 07:03:08.121 [Task submitter] INFO  nextflow.Session - [76/e15b21] Submitted process > fast5subset (1)
+Mar-18 07:03:09.278 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: fast5subset (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bhargava/workflows/mods-nf/work/76/e15b21a1ec1e34b6886bc3d557f13c]
+Mar-18 07:03:30.185 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: basecalling (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bhargava/workflows/mods-nf/work/0d/a374256b306a8fce62324faa55227c]
+Mar-18 07:03:30.223 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-18 07:03:30.223 [Task submitter] INFO  nextflow.Session - [a9/645c65] Submitted process > multitosingle (1)
+Mar-18 07:03:31.209 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: multitosingle (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bhargava/workflows/mods-nf/work/a9/645c654a707d31c98c9406624843b5]
+Mar-18 07:03:31.226 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-18 07:03:31.227 [Task submitter] INFO  nextflow.Session - [0b/c909dc] Submitted process > tomboresquiggle (1)
+Mar-18 07:03:36.671 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: tomboresquiggle (1); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bhargava/workflows/mods-nf/work/0b/c909dc5a85d4724701af3f1d7b4b6e]
+Mar-18 07:03:36.814 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process tomboresquiggle > Skipping output binding because one or more optional files are missing: fileoutparam<0>
+Mar-18 07:03:36.816 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-18 07:03:36.916 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-18 07:03:36.934 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=29.5s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Mar-18 07:03:37.101 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-18 07:03:37.108 [main] DEBUG nextflow.util.SpuriousDeps - AWS S3 uploader shutdown
+Mar-18 07:03:37.123 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
